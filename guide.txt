@@ -1,0 +1,97 @@
+ReactJS = it is a javascript library that is used to build user interfaces
+
+it is based on javascript
+library = it can only do 1 thing
+1 thing  = to build user interfaces
+user interfaces (ui) = (browser based) ui 
+
+drone (remote control)
+cctv (external input devices)
+nairaland (browser)
+
+framework = can do many things
+
+facebook 
+- pattern 
+    * your code must be declarative = always use es6 and above syntax
+    ( make it simple, don't complicate things, )  
+    * component = section
+    * learn once, write anywhere
+        react = web application
+              = mobile application ( android, ios )
+              = desktop application (  )
+
+
+1) how to create a new react project
+
+npx create-react-app nameoftheapp
+
+2) enter the folder
+
+cd nameofthefolder
+
+3) how to start react project
+
+npm start
+
+4) what is inside the project folder
+
+node_modules ( all packages are stored )
+    - don't touch it
+    - don't delete it
+public ( it contains static files)
+    - files that will not change 
+        * icons
+        * images
+        * font
+        * css styles
+src ( this is where you will write code )
+    - you can open
+    - you should open it
+        * index.js
+        * index.css
+        * app.js
+        * app.css
+gitignore ( is used by git to house files you don't want to track )
+README.md ( this is to describe your application)
+    - who built it
+    - how it was built
+package.json 
+    - this will keep inventory of your packages
+    - it describes the package
+    - keep the scripts that on the project
+    - to configure your application
+package-lock.json 
+    - it is based on the package.json files
+    - don't touch it
+
+
+Twitter Interface 
+    - app component ( containing all of them ) - 9
+        * sidebar component ( should show the navigation ) - 1
+        * searchbox compoent ( should allow us to search ) - 2
+        * trend component - 3
+        * message component -4 
+        * profile component - 5
+        * center card component - 6
+        * header title - 7
+        * interaction component - 8
+            - chat component 
+            - like component
+            - share compoent
+            - retweet compoent
+
+
+Youtube Interface
+    - container component   
+        * sidebar component
+            - overview component
+            - personal video component
+            - subscription component
+            - more-from-youtube component
+        * top component
+            - navigation drawer component
+            - searchbar component 
+            - profile component
+        * center component
+            - video card component
