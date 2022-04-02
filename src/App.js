@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
 
+// import something from location
+import Top from "./Top/Top.js"
+import Center from './Center';
+import Sidebar from './SideBar/index.js';
+
+function add( a,b){
+  return a + b // not returning html, it is not a component
+}
+
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Top></Top>
+        <div className='body'>
+          <Sidebar />
+
+          
+            <Center />        
+         
+        </div>
     </div>
   );
 }

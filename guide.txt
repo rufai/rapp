@@ -95,3 +95,23 @@ Youtube Interface
             - profile component
         * center component
             - video card component
+
+Component ( breaking your interfaces into smaller section )
+    - high level
+    - low level ( technical idea )
+    - code  ( html + css + js )
+
+card = html + css + js
+
+normal page  = html <-- css
+                    <-- js
+
+react = js ( html )
+        <--- css
+
+Technical / Code Explanation of Component
+    - a component is javascript function
+    - it must return ui (  something that the user must see ) 
+    - it must return html
+
+Component now becomes an html tag
