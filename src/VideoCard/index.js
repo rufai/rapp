@@ -1,12 +1,12 @@
-function VideoCard(){
+// name, flag, wiki
+function VideoCard(props){
     return (
         <section>
-            <img src="hq720.webp" />
+            <hr />
+            <img src={props.flag} alt={props.country_name} />
             <section>
-                <img className="sub-img" src="hq720.webp" />
-                <h4>The Glitch That Kept Sending The FBI To A Tiny Kansas Farm</h4>
-                <span>Half as Interesting</span>
-                <span>3.6M . 1 month ago</span>
+                <h4>{props.country_name} </h4>
+                <a href= {"https://en.wikipedia.org"+ props.wiki}  target="_blank">Visit  {props.country_name} on wikipedia</a>
             </section>
         </section>
     )
