@@ -17,14 +17,10 @@ console.log(country_data);
 //   );
 // }
 
-// es6 declarative version
-const VideoCards = country_data.map(item => 
-        <VideoCard
-          flag={item.file_url}
-          country_name={item.name}
-          wiki={item.url}
-        /> )
-
+// // es6 declarative version
+const VideoCards = country_data.map((item) => (
+  <VideoCard flag={item.file_url} country_name={item.name} wiki={item.url} />
+));
 
 let students = [
   <Student name="adeyemi" age="9" />,

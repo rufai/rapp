@@ -12,8 +12,6 @@ function Student(props){
             <h3>{props.name}</h3>
             <h4> { props.age } </h4>
             <img src={props.img} alt={props.name} />
-           
-        
         </section>
     )
 }
