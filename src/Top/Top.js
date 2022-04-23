@@ -1,15 +1,31 @@
-import "./style.css"
+import "./style.css";
 
-function Top(){
-    return (
-        <div className="top">
-            <h1>Top component</h1>
-        </div>
-    )
+import TopItem from "../TopItem";
+
+// component
+// will return ui
+// Top (parent) ---> TopItem(child)
+function Top() {
+  return (
+    <div className="top">
+      <h1>Top component</h1>
+      <TopItem
+        src="sdfsdfd"
+        alt=""
+        className=""
+        id=""
+        height="200"
+        width="600"
+      />
+      <img src="" alt="" className="" id="" height="" width="" />
+    </div>
+  );
 }
 
-function Ogo(){
-    console.log("I am Okey!")
+// normal js function
+// return normal js data type  ( boolean, number, null, undefined )
+function Ogo() {
+  console.log("I am Okey!");
 }
 
 export default Top;

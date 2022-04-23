@@ -17,4 +17,6 @@ function Student(props){
     )
 }
 
-export default Student;
+let name ="Ogo"
+
+export { Student, name };

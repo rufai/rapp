@@ -3,7 +3,7 @@ function MoreFromYoutube() {
     <section>
       <h1> More From Youtube </h1>
       <div>
-        <span class="iconify" data-icon="ant-design:youtube-outlined"></span>
+        <span className="iconify" data-icon="ant-design:youtube-outlined"></span>
         YouTube Premium
       </div>
     </section>

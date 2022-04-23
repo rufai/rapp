@@ -8,7 +8,7 @@ function Sidebar(){
     return (
         <div className="sidebar">
             <input id="koko" type="text" />
-            <label forHTML="koko"> do you know the koko ? </label>
+            {/* <label forHTML="koko"> do you know the koko ? </label> */}
             <h1>Sidebar component</h1>
             <Overview />
             <hr />
