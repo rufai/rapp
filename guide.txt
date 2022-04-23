@@ -115,3 +115,41 @@ Technical / Code Explanation of Component
     - it must return html
 
 Component now becomes an html tag
+
+What is component
+    - technical definition of component 
+        * it is a javascript function that returns UI ( html + css + js  )
+
+Parent Component
+    - calling/import
+Child Component
+    - called/imported
+
+Behaviour of component ( Pure  )
+    - a component should be a pure function
+    - a componet should not have side effect
+     * the component should not affect anyhing
+     * anything should not affect it
+    - the component should perform only 1 action
+
+
+Data 
+    - Properties ( props, p )
+    - State
+
+Properties ( const )
+    Behaviour
+    - is the link to tranfer data betweeen the parent and child component
+    - this data flow in one direction ( from the parent to the child )
+    - the child should not give data to the parent
+    - the child must not change the data
+        * the child should only use the data 
+
+    Technically Definition
+    - is an object
+    - key value pair
+    - which is the attributes passed into the component element
+
+2 ways to create component
+    - old - class - classical component (  )
+    - new - function - functional component
