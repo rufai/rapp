@@ -153,3 +153,9 @@ Properties ( const )
 2 ways to create component
     - old - class - classical component (  )
     - new - function - functional component
+
+State   
+    - can change
+    - can not travel betweeen components
+    - resides within the component
+    - when the value of state changes the dom will re-render / reload
