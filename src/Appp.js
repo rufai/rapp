@@ -6,6 +6,7 @@ import Top from "./Top/Top.js"
 import Center from './Center';
 import Sidebar from './SideBar/index.js';
 import Store from './Store';
+import BbcHundred from './BbcHundred';
 
 function add( a,b){
   return a + b // not returning html, it is not a component
@@ -15,6 +16,7 @@ function App() {
   return (
     <section>
       <div className="App">
+          <BbcHundred />
           <Store />
           <Top></Top>
           <div className='body'>

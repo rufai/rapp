@@ -1,0 +1,5 @@
+
+.bbc_hundred > .bbc_updater {
+    display: flex;
+    justify-content: space-between;
+}

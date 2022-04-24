@@ -1,0 +1,27 @@
+
+.htp {
+    display: block;
+}
+
+.htp > button {
+    background-color: black;
+    color: beige;
+    border-width: 0px;
+    border-radius: 0%;
+    padding: 2px;
+
+}
+
+.htp > p {
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+.toggle_true {
+    visibility: visible;
+}
+
+.toggle_false {
+    visibility: hidden;
+}
