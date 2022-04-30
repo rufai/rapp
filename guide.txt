@@ -133,12 +133,13 @@ Behaviour of component ( Pure  )
     - the component should perform only 1 action
 
 
-Data 
+Data in Component
     - Properties ( props, p )
     - State
 
 Properties ( const )
     Behaviour
+    - the component and prop must behave like pure functions
     - is the link to tranfer data betweeen the parent and child component
     - this data flow in one direction ( from the parent to the child )
     - the child should not give data to the parent
@@ -150,6 +151,10 @@ Properties ( const )
     - key value pair
     - which is the attributes passed into the component element
 
+    How To Send Data From Child To Parent
+    - we will send something from parent to child to extract the data
+    - we will a function from parent to child to extract the data
+
 2 ways to create component
     - old - class - classical component (  )
     - new - function - functional component
@@ -159,3 +164,29 @@ State
     - can not travel betweeen components
     - resides within the component
     - when the value of state changes the dom will re-render / reload
+    - only the component will refresh
+
+    How To Create A State
+    - use need to import hooks - the useState hook
+
+    const [intervalKey, setIntervalKey] = useState("");
+
+    - useState
+    - you must supply one parameter
+    - will return an array
+    - this array has 2 elements inside
+    - the first-element is the argument that we passed to useState
+    - the second-element is function that allows to change the argument
+    - the benefit of the update function is it allow react to track the state and update the component according
+   
+    function useState(arg){
+         function update(value){
+            arg = value
+        }
+        // reload the component
+        return [arg, update(0)]
+    } 
+
+    const col = useState("sdfdsfds")
+    const [collect, setCollect] = useState("sdfdsfds")
+    

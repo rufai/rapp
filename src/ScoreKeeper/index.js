@@ -11,7 +11,8 @@ import { useState } from "react"
  * updating / change the data (state) of the (virtual) component
  */
 const ScoreKeeper = () => {
-    let counter = 0 // normal js variable
+    // let counter = 0 // normal js variable
+    let [counter, setCounter] = useState(0);
 
     let [el, setEL] = useState(6) // this is react state
     let [c, setC] = useState(6) // this is react state
@@ -25,7 +26,7 @@ const ScoreKeeper = () => {
     // setP(55)
     return (
         <section >
-            <button onClick={() => console.log(setEL(++el))}>Click Me</button>
+            <button onClick={() => setCounter(++counter)}>Click Me</button>
             <p>Score: <span>{counter}/32</span> </p>
             <h6>{el}</h6>
         </section>

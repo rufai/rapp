@@ -3,8 +3,7 @@ import VideoCard from "../VideoCard";
 import { Student, name }  from "../Student";
 // data
 import country_data from "./../data/country_images";
-console.log(country_data);
-console.log(Student)
+
 
 // let VideoCards = []; // to hold all the video cards
 // for (let i = 0; i < country_data.length; i++) {

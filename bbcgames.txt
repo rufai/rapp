@@ -1,7 +1,7 @@
 // https://www.bbc.com/sport/football/61202500
 1 - Stopwatch Component
 2 - ScoreKeeper Component
-3 - CollectPlayer Component
+3 - CollectPlayer Component / QuizPlayer
 4 - PlayerList Component
 5 - HowToPlay Component
 6 - BbcHundred Component ( Container )

@@ -4,7 +4,7 @@
 // props is object
 // props will contain the content put in the component call
 function Student(props){
-    console.log(props)
+    // console.log(props)
     const {name, age, img} = props
 
     return (

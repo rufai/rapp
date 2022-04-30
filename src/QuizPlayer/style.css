@@ -1,0 +1,8 @@
+
+.start_quiz {
+    background-color: #ffd230;
+    border-style: none;
+    color: black;
+    padding: 4px 100px;
+    justify-content: flex-start;
+}
