@@ -1,7 +1,7 @@
 
 import "./style.css"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 // render / automatically reload
 /**
@@ -10,10 +10,12 @@ import { useState } from "react"
  * unmounting / it has been removed from the (virtual) DOM
  * updating / change the data (state) of the (virtual) component
  */
-const ScoreKeeper = () => {
-    // let counter = 0 // normal js variable
+const ScoreKeeper = (props) => {
+    // let counter = 0 // normal js variable//
+    
     let [counter, setCounter] = useState(0);
-
+    useEffect(() => setCounter(props.score),[props.score])
+    
     let [el, setEL] = useState(6) // this is react state
     let [c, setC] = useState(6) // this is react state
     let [k, setK] = useState(6) // this is react state

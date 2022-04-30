@@ -1,4 +1,4 @@
-import { useState } from "react"; // useState hook
+import { useState, useEffect } from "react"; // useState hook
 StopWatch.defaultProps = {
   "job" : "hire me"
 }
@@ -7,11 +7,15 @@ function StopWatch ({shouldStartCountDown, job}) {
   // console.log(StopWatch)
   let [counter, setCounter] = useState(300); // counter is a state
   let [countDownKey, setCountDownKey] = useState(null); // interval is a state
-  const END_TIME = "04:50";
+  const END_TIME = "00:00";
 
   // let k =  2
   // console.log(k)
-
+  useEffect(() => {
+    if (shouldStartCountDown) {
+      startCountDownAutomatically();
+      console.log(shouldStartCountDown);
+    }}, [shouldStartCountDown] )
   /**
    * it will reduce the value of counter
    */
@@ -38,10 +42,7 @@ function StopWatch ({shouldStartCountDown, job}) {
 
     setCountDownKey(key);
   };
-  if (shouldStartCountDown) {
-    startCountDownAutomatically();
-    console.log(shouldStartCountDown);
-  }
+
   const stopCountDown = () => {
     clearInterval(countDownKey);
   };
